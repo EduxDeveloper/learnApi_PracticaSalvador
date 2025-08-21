@@ -31,6 +31,9 @@ CREATE TABLE Categoria (
     fechaCreacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+ALTER TABLE Categoria 
+ADD (imagen_url VARCHAR2(120));
+
 -- Tabla Productos
 CREATE TABLE Productos (
     idProducto NUMBER PRIMARY KEY,
